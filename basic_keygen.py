@@ -1,3 +1,5 @@
+# Input root-me.org for the solution.
+
 from sys import stdin
 from hashlib import sha256
 
