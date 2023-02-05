@@ -1,1 +1,1 @@
-# This is a repository for scripts I've written when doing mainly reverse engineering challenges found on root-me.org.
+This is my repository for solutions to various reverse engineering challenges found on root-me.org.
