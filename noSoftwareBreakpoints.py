@@ -4,8 +4,9 @@
 def leftRotate32(value: int, rotate: int) -> int:
     return  ((value << rotate) % 0xffffffff) | (value >> (32 - rotate))
 
-def rightRotate32(value: int, rotate: int) -> int:
-    return ((value >> rotate) | (value << (32 - rotate)) % 0xffffffff) 
+# Rotate right is the same as n bits short of a full left rotation.
+def rightRotate32(value: int, rotate: int, n=32: int) -> int:
+    return leftRotate32(value, 32 - rotate)
 
 def initializeStream(section: list) -> list: 
     """Takes the .text section values as a list and performes the algorithm which produces a sort of keystream."""
